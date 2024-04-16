@@ -36,7 +36,7 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-12: Wrong global lending limit check in _deposit function](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/324)
 - [M-13: User might execute PositionToken of token set by previous token owner.](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/256)
 - [M-14: V3Vault is not ERC-4626 compliant](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/249)
-- [M-15: Users' newly created positions can be prematurely closed and removed from the vault directly after they are created](lhttps://github.com/code-423n4/2024-03-revert-lend-findings/issues/232)
+- [M-15: Users' newly created positions can be prematurely closed and removed from the vault directly after they are created](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/232)
 - [M-16: Repayments and liquidations can be forced to revert by an attacker that repays miniscule amount of shares](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/222)
 - [M-17: AutoExit could receive a reward calculated from the entire position's fund even if onlyFee is true in AutoExit.execute().](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/216e)
 - [M-18: Users cannot stop loss in AutoRange and AutoExit](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/202)
@@ -46,7 +46,7 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-22: dailyDebtIncreaseLimitLeft is not updated in liquidate().](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/140)
 - [M-23: AutoRange execution can be front-ran to avoid protocol fee, causing loss for protocol](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/110)
 - [M-24: Incorrect liquidation fee calculation during underwater liquidation, disincentivizing liquidators to participate](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/53)
-- [M-25: Asymmetric calculation of price difference](lhttps://github.com/code-423n4/2024-03-revert-lend-findings/issues/10)
+- [M-25: Asymmetric calculation of price difference](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/10)
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
 
