@@ -69,7 +69,6 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | https://github.com/revert-finance/lend/pull/29 | H-04 | Refactoring to make all transformers properly check caller permission | 
 | https://github.com/revert-finance/lend/pull/10 | H-05 | Fixed calculation | 
 | https://github.com/revert-finance/lend/pull/8 https://github.com/revert-finance/lend/pull/32 | H-06 | Removed sending of NFT to avoid reentrancy | 
-
 | https://github.com/revert-finance/lend/pull/23 | M-05 | Fixed | 
 | https://github.com/revert-finance/lend/pull/22 | M-06 | Fixed | 
 | https://github.com/revert-finance/lend/pull/21 | M-07 | Fixed | 
@@ -98,13 +97,15 @@ These are additional changes that will be in scope.
 | https://github.com/revert-finance/lend/pull/13 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/220 | Improper return of chainlinkReferencePriceX96 | 
 | https://github.com/revert-finance/lend/pull/27 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/12 | Missing L2 sequencer checks for Chainlink oracle | 
 | https://github.com/revert-finance/lend/pull/28 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/14 | Some ERC20 can revert on a zero value transfer | 
-| https://github.com/revert-finance/lend/pull/31 | L & QA | Several small changes to address low and gas optimization issues | 
-| https://github.com/revert-finance/lend/pull/33 | L & QA | Several small changes to address low and gas optimization issues | 
+| https://github.com/revert-finance/lend/pull/31 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
+| https://github.com/revert-finance/lend/pull/33 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
 
 ## Out of Scope
 
 Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
 
+| Issue | Comments | 
+| ----------- | ----------- |
 | M-01 | Acknowlegded, see comments in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/466 | 
 | M-02 | Acknowlegded, this is solved off-chain by the operator bots, see discussion in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/459 | 
 | M-03 | Acknowlegded, at deployment a resonable value will be set for minLoanSize | 
