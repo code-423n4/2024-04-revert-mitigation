@@ -48,8 +48,6 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-24: Incorrect liquidation fee calculation during underwater liquidation, disincentivizing liquidators to participate](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/53)
 - [M-25: Asymmetric calculation of price difference](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/10)
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 ## Overview of changes
 
 Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
@@ -57,28 +55,60 @@ Please provide context about the mitigations that were applied if applicable and
 ## Scope
 
 ### Branch
-[ ⭐️ SPONSORS ADD A LINK TO THE BRANCH IN YOUR REPO CONTAINING ALL PRS ]
+https://github.com/revert-finance/lend/tree/audit
 
 ### Mitigation of High & Medium Severity Issues
-[ ⭐️ SPONSORS ADD ALL RELEVANT PRs TO THE TABLE BELOW:]
 
 Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/your-repo/sample-contracts/pull/XXX | H-01 | This mitigation does XYZ | 
+| https://github.com/revert-finance/lend/pull/19 | H-01 | Checks token in permit | 
+| https://github.com/revert-finance/lend/pull/8 https://github.com/revert-finance/lend/pull/32 | H-02 | Removed sending of NFT to avoid reentrancy | 
+| https://github.com/revert-finance/lend/pull/29 | H-03 | Refactoring to make all transformers properly check caller permission | 
+| https://github.com/revert-finance/lend/pull/29 | H-04 | Refactoring to make all transformers properly check caller permission | 
+| https://github.com/revert-finance/lend/pull/10 | H-05 | Fixed calculation | 
+| https://github.com/revert-finance/lend/pull/8 https://github.com/revert-finance/lend/pull/32 | H-06 | Removed sending of NFT to avoid reentrancy | 
+
+| https://github.com/revert-finance/lend/pull/23 | M-05 | Fixed | 
+| https://github.com/revert-finance/lend/pull/22 | M-06 | Fixed | 
+| https://github.com/revert-finance/lend/pull/21 | M-07 | Fixed | 
+| https://github.com/revert-finance/lend/pull/11 | M-08 | Fixed | 
+| https://github.com/revert-finance/lend/pull/20 | M-09 | Fixed | 
+| https://github.com/revert-finance/lend/pull/18 | M-10 | Fixed | 
+| https://github.com/revert-finance/lend/pull/17 | M-11 | Added safety buffer for borrow and decreaseLiquidity (not for transformers) | 
+| https://github.com/revert-finance/lend/pull/16 | M-12 | Fixed | 
+| https://github.com/revert-finance/lend/pull/15 | M-14 | Fixed | 
+| https://github.com/revert-finance/lend/pull/8 https://github.com/revert-finance/lend/pull/32 | M-15 | Fixed | 
+| https://github.com/revert-finance/lend/pull/14 https://github.com/revert-finance/lend/pull/30 | M-16 | Fixed | 
+| https://github.com/revert-finance/lend/pull/12 | M-18 | Fixed | 
+| https://github.com/revert-finance/lend/pull/26 | M-19 | Fixed | 
+| https://github.com/revert-finance/lend/pull/25 | M-20 | Fixed | 
+| https://github.com/revert-finance/lend/pull/24 | M-21 | Added deadline where missing | 
+| https://github.com/revert-finance/lend/pull/11 | M-22 | Fixed | 
+| https://github.com/revert-finance/lend/pull/7 | M-24 | Fixed calculation | 
+| https://github.com/revert-finance/lend/pull/5 | M-25 | Fixed calculation | 
 
 ### Additional scope to be reviewed
-[ ⭐️ CAS PLEASE REMOVE THIS SECTION IF THE SPONSOR IS ONLY MITIGATING HMS]
-
-[ ⭐️ SPONSORS ADD ALL RELEVANT PRs TO THE TABLE BELOW:]
 
 These are additional changes that will be in scope.
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/your-repo/sample-contracts/pull/XXX | H-01 | This mitigation does XYZ | 
+| https://github.com/revert-finance/lend/pull/13 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/220 | Improper return of chainlinkReferencePriceX96 | 
+| https://github.com/revert-finance/lend/pull/27 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/12 | Missing L2 sequencer checks for Chainlink oracle | 
+| https://github.com/revert-finance/lend/pull/28 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/14 | Some ERC20 can revert on a zero value transfer | 
+| https://github.com/revert-finance/lend/pull/31 | L & QA | Several small changes to address low and gas optimization issues | 
+| https://github.com/revert-finance/lend/pull/33 | L & QA | Several small changes to address low and gas optimization issues | 
 
 ## Out of Scope
 
 Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
+
+| M-01 | Acknowlegded, see comments in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/466 | 
+| M-02 | Acknowlegded, this is solved off-chain by the operator bots, see discussion in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/459 | 
+| M-03 | Acknowlegded, at deployment a resonable value will be set for minLoanSize | 
+| M-04 | Acknowlegded, we will monitor for this behaviour and adjust config if needed, see discussion in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/435 | 
+| M-13 | Acknowlegded, see comment in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/256 | 
+| M-17 | Acknowlegded, see comment in https://github.com/code-423n4/2024-03-revert-lend-findings/issues/216 | 
+| M-23 | Acknowlegded, this is solved off-chain by the operator bots | 
