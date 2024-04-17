@@ -99,6 +99,7 @@ These are additional changes that will be in scope.
 | https://github.com/revert-finance/lend/pull/28 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/14 | Some ERC20 can revert on a zero value transfer | 
 | https://github.com/revert-finance/lend/pull/31 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
 | https://github.com/revert-finance/lend/pull/33 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
+| https://github.com/revert-finance/lend/pull/34 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
 
 ## Out of Scope
 
