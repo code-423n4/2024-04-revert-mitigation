@@ -1,9 +1,9 @@
-# Revert - Mitigation Review details
+# Revert Lend Mitigation Review details
 - Total Prize Pool: $23,500 in USDC
   - HM awards: $21,150
   - Judge awards: $2,350
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-C4-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-mitigation-review/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2024-04-revert-lend-mitigation-review/submit)
 - Starts April 19, 2024 20:00 UTC
 - Ends April 29, 2024 20:00 UTC
 
