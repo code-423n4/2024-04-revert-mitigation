@@ -48,10 +48,6 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-24: Incorrect liquidation fee calculation during underwater liquidation, disincentivizing liquidators to participate](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/53)
 - [M-25: Asymmetric calculation of price difference](https://github.com/code-423n4/2024-03-revert-lend-findings/issues/10)
 
-## Overview of changes
-
-Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
-
 ## Scope
 
 ### Branch
