@@ -90,12 +90,12 @@ These are additional changes that will be in scope.
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/revert-finance/lend/pull/13 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/220 | Improper return of chainlinkReferencePriceX96 | 
-| https://github.com/revert-finance/lend/pull/27 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/12 | Missing L2 sequencer checks for Chainlink oracle | 
-| https://github.com/revert-finance/lend/pull/28 | https://github.com/code-423n4/2024-03-revert-lend-findings/issues/14 | Some ERC20 can revert on a zero value transfer | 
-| https://github.com/revert-finance/lend/pull/31 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
-| https://github.com/revert-finance/lend/pull/33 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
-| https://github.com/revert-finance/lend/pull/34 | QA, GAS | Several small changes to address QA and GAS optimization issues | 
+| https://github.com/revert-finance/lend/pull/13 | ADD-01 - https://github.com/code-423n4/2024-03-revert-lend-findings/issues/220 | Improper return of chainlinkReferencePriceX96 | 
+| https://github.com/revert-finance/lend/pull/27 | ADD-02 - https://github.com/code-423n4/2024-03-revert-lend-findings/issues/12 | Missing L2 sequencer checks for Chainlink oracle | 
+| https://github.com/revert-finance/lend/pull/28 | ADD-03 - https://github.com/code-423n4/2024-03-revert-lend-findings/issues/14 | Some ERC20 can revert on a zero value transfer | 
+| https://github.com/revert-finance/lend/pull/31 | ADD-04 - QA, GAS | Several small changes to address QA and GAS optimization issues | 
+| https://github.com/revert-finance/lend/pull/33 | ADD-05 - QA, GAS | Several small changes to address QA and GAS optimization issues | 
+| https://github.com/revert-finance/lend/pull/34 | ADD-06 - QA, GAS | Several small changes to address QA and GAS optimization issues | 
 
 ## Out of Scope
 
